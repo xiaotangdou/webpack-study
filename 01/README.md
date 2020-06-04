@@ -2,6 +2,7 @@
 1、webpack构建时遇到依赖循环如何处理  
 2、hash生成原理
 3、webpack 默认支持js json模块， .js > .json，要支持其他文件格式需要loader
+4、同步模块和一部模块加载原理
 
 ### npx
 1、查找当前目录node_modules

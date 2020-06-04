@@ -1,10 +1,10 @@
-let b = { b: 'b' }
+// let b = { b: 'b' }
 
 exports.a = 'a'
 
-exports.b = b
+// exports.b = b
 
-a = 'aaa'
-b.b = 'bbb'
+// a = 'aaa'
+// b.b = 'bbb'
 
-module.exports = {c: 'ccc'}
+// module.exports = {c: 'ccc'}

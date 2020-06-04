@@ -1,6 +1,10 @@
-const { a, b } = require('./a')
-const c = require('./a')
+// const { a, b } = require('./a')
+// const c = require('./a')
 
-console.log(a, b)
+// console.log(a, b)
 
-console.log(c)
+// console.log(c)
+
+require.ensure(['./a'], (a) => {
+    console.log(a)
+})
