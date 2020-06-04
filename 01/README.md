@@ -12,10 +12,10 @@
 // webpack 基于nodeJs,所以遵循commonjs规范
 const path = require('path')
 module.exports = {
-    entry: "./src/index.js"
+    entry: "./src/index.js",
     output: {
         // path 必须是绝对路径
-        path: path.reslove(__dirname, './dist'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'main.js'
     }
 }
@@ -43,7 +43,7 @@ module.exports = {
     },
     output: {
         // path 必须是绝对路径
-        path: path.reslove(__dirname, './dist'),
+        path: path.resolve(__dirname, './dist'),
         // filename: 'main.js'
         // 占位符 hash chunkhash name id
         // hash 整个项目构建的hash，每次构建都会生成，默认20位
