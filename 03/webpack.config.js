@@ -4,25 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     // 上下文，项目打包的相对路径，默认 process.cwd()项目当前目录
     context: process.cwd(),
-    // 项目入口，string、object、array
-    // entry: "./src/index.js"
-    // entry: ["./src/index.js"]
-    // 对象模式实现多入口，多入口对应多出口，实现多页面应用
-    entry: {
-        main: './src/index.js'
-    },
+    entry:  "./src/index.js",
     output: {
         // path 必须是绝对路径
         path: path.resolve(__dirname, './dist'),
-        // filename: 'main.js'
-        // 占位符 hash chunkhash name id
-        // hash 整个项目构建的hash，每次构建都会生成，默认20位
-        // chunkhash 根据入口entry进行依赖解析，构建对应的chunk，只要组成entry的模块内容没变，则chunkhash不变
-        filename: '[name]-[hash:20]-[chunkhash]-[id].js'
+        filename: '[name].js'
     },
     // none development production
     mode: 'development',
-
     // loader 处理不认识的模块
     // webpack构建时，遇到不认识的文件格式时会来module中找对应的loader
     module: {
@@ -56,12 +45,14 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(png|jpeg)/,
                 loader: "file-loader",
                 options: {
                     name: "[name]_[hash:6].[ext]",
                     outputPath: "images/"
                 }
-            }
+            },
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
         ]
     },
 
@@ -69,9 +60,9 @@ module.exports = {
     plugins: [
         // 默认支持ejs模板语法
         new HtmlWebpackPlugin({
-            // 选择模板
-            template: '',
-            filename: ''
+            title: 'test',
+            template: './index.html',
+            filename: 'index.html'
         })
     ]
 }
