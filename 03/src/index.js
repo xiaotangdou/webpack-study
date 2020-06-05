@@ -8,3 +8,5 @@ Promise.reject(false)
 async function aaa() {
     await Promise.reject(false)
 }
+
+document.write(123)
