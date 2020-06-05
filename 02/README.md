@@ -3,8 +3,12 @@ bootcdn.cn
 
 ### 问题
 1、图片处理，base64 
-2、字体处理
-3、html如何压缩
+
+2、字体处理  
+
+3、html如何压缩  
+webpack production模式会压缩  
+
 4、devServer: contentBase相对webpack的outpath ？
 
 ### url-loader
