@@ -1,8 +1,8 @@
-// let b = { b: 'b' }
+let b = { b: 'b' }
 
 exports.a = 'a'
 
-// exports.b = b
+exports.b = b
 
 // a = 'aaa'
 // b.b = 'bbb'

@@ -208,7 +208,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// const { a, b } = require('./a')\n// const c = require('./a')\n\n// console.log(a, b)\n\n// console.log(c)\n\n__webpack_require__.e(/*! require.ensure */ 0).then(().bind(null, __webpack_require__)).catch(__webpack_require__.oe)\n\n\n//# sourceURL=webpack:///./src/common-js/index.js?");
+eval("// const { a, b } = require('./a')\n// const c = require('./a')\n\n// console.log(a, b)\n\n// console.log(c)\n\n__webpack_require__.e(/*! require.ensure */ 0).then(((a) => {\n    console.log(a)\n}).bind(null, __webpack_require__)).catch(__webpack_require__.oe)\n\n\n//# sourceURL=webpack:///./src/common-js/index.js?");
 
 /***/ })
 
