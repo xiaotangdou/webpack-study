@@ -86,3 +86,9 @@ enforce:‘pre’ 前置 权重最高
 enforce:‘normal’ 不变 权重第二
 enforce:‘inline’ 行内 权重第三
 enforce:‘post’ 后置 权重第四
+
+11、hash chuankhash contenthash
+
+hash：整个项目构建的hash，每次构建都会生成，默认20位
+chunkhash：根据入口entry进行依赖解析，构建对应的chunk，只要组成entry的模块内容没变，则chunkhash不变
+contenthash：内容不变，则不变

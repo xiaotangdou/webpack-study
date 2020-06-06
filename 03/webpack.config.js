@@ -19,7 +19,7 @@ module.exports = {
         publicPath: '/aaa/'
     },
     // none development production
-    mode: 'development',
+    mode: 'production',
     // loader 处理不认识的模块
     // webpack构建时，遇到不认识的文件格式时会来module中找对应的loader
     module: {
