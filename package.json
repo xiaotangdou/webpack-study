@@ -1,0 +1,20 @@
+{
+  "name": "webpack-study",
+  "version": "1.0.0",
+  "description": "webpack进一步的系统学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaotangdou/webpack-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaotangdou/webpack-study/issues"
+  },
+  "homepage": "https://github.com/xiaotangdou/webpack-study#readme"
+}
