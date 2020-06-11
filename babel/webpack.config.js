@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-    entry: path.reslove(__dirname, './src/index.js'),
+    entry: path.resolve(__dirname, './src/index.js'),
     output: {
-        path: path.reslove(__dirname, './dist'),
+        path: path.resolve(__dirname, './dist'),
     },
     mode: 'development',
     module: {
