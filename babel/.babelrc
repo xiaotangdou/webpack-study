@@ -13,6 +13,6 @@
         ]
     ],
     "plugins": [
-       ["./plugins/babel-plugin--custom-console-transform", { "useBuiltIns": "usa6666ge" }]
+       ["./plugins/babel-plugin--custom-console-transform", { "silent": true }]
     ]
   }

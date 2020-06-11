@@ -11,13 +11,13 @@ module.exports = function(babelObj, payload, configPath) {
         name: 'custom-console-transform',
         visitor: {
             CallExpression(path, source){
-                const callee = path.get('callee');
-
-                console.log('callee.node.type', callee.node.type)
-                console.log('callee.node.object.name', callee.node.object.name)
+                const { opts } = source
+                const callee = path.get('callee')
                 
                 if ( callee.node.type === 'MemberExpression' && callee.node.object.name === 'customConsole') {
-                    path.remove()
+                    if (opts.silent) {
+                        path.remove()
+                    }
                 }
             }
         }    
