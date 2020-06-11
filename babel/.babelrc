@@ -13,6 +13,6 @@
         ]
     ],
     "plugins": [
-       ["./plugins/babel-plugin--custom-console-transform", { "silent": true }]
+      ["./plugins/babel-plugin--custom-console-transform", { "silent": true }]
     ]
   }
